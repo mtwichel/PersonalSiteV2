@@ -1,6 +1,7 @@
 $( document ).ready(function() {
   getRecipeFinder();
   getCityBrewV2();
+  getThisSite();
 });
 
 function getRecipeFinder(){
@@ -28,14 +29,14 @@ function getThisSite(){
             var obj = JSON.parse(this.responseText);
             var string = obj[0].commit.author.date;
             var date = new Date(string)
-            $('#recipeFinderDate').text("Last updated " +
+            $('#personalsiteDate').text("Last updated " +
                                         (date.getMonth()+1) +
                                         "." + date.getDate() +
                                          "." + String(date.getFullYear()).substring(2)
                                        );
        }
     };
-  xhttp.open("GET", "https://api.github.com/repos/mtwichel/RecipeFinderApp/commits", true);
+  xhttp.open("GET", "https://api.github.com/repos/mtwichel/PersonalSiteV2/commits", true);
   xhttp.send();
 }
 
