@@ -12,7 +12,7 @@
   <body>
     <div class="jumbotron">
         <div class="container">
-          <h1 class ="display-1">Welcome to<br>MarcusTwichel.com</h1>
+          <h1 class="display-1" id="mainTitle">Welcome to MarcusTwichel.com</h1>
           <h1 class="display-4">Hi, I'm Marcus Twichel. I'm a developer, student, and aspiring philosopher.</h1>
         </div>
       </div>
@@ -31,7 +31,8 @@
       </div>
 
       <div class="container">
-        <div class="card-deck">
+        <div class="row">
+          <div class="col-md">
           <div class="card">
             <img class="card-img-top" src="imgs/personalscreenshot.png" alt="Card image cap">
             <div class="card-body">
@@ -43,6 +44,8 @@
           <small class="text-muted" id="personalsiteDate">Last updated </small>
         </div>
       </div>
+    </div>
+    <div class="col-md">
       <div class="card">
         <img class="card-img-top" src="imgs/citybrewscreenshot.png" alt="Card image cap">
         <div class="card-body">
@@ -55,6 +58,8 @@
           <small class="text-muted" id="cbpaperworkv2Date">Last updated </small>
         </div>
       </div>
+    </div>
+    <div class="col-md">
         <div class="card">
           <img class="card-img-top" src="imgs/recipescreenshot.png" alt="Card image cap">
           <div class="card-body">
@@ -72,6 +77,7 @@
       </div>
     </div>
   </div>
+  </div>
 </div>
 
 
@@ -84,5 +90,6 @@
     <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
     <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
     <script src="js/getcommitdates.js"></script>
+    <script src="js/title.js"></script>
   </body>
 </html>
